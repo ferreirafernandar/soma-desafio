@@ -4,7 +4,8 @@ WORKDIR /go/src/soma
 
 COPY  go/src .
 
-RUN go get -v ./... && go build -ldflags="-s -w"
+RUN go get -v ./...  \
+&& go build -ldflags="-s -w"
 RUN ls -la
 
 CMD ["soma"]
