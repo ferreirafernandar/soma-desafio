@@ -18,4 +18,3 @@ func TestSoma(t *testing.T) {
 		}
 	}
 }
-
